@@ -44,10 +44,6 @@
    </div><!-- /.fixed-buttons-container -->
 
 
-   <!-- jQuery -->
-   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-   <script src="https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js"></script>
-   <script src="./js/script.js"></script>
 
 
 </body>
