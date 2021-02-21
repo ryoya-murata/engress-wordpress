@@ -43,7 +43,7 @@
                   <p class="strength-item__desc">TOEFLではビジネス英語には登場しない数多くの学術的内容が出題されます。そのため、ベースとなる知識も必要になります。Engressでは過去1000題を分析し、最適なカリキュラムを組んでいます。</p><!-- /.strength-item__desc -->
                </div><!-- /.strength-item__intro-wrapper -->
                <div class="strength-item__img-wrapper">
-                  <img src="./images/front/feature01.png" alt="特長1" class="strength-item__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/feature01.png" alt="特長1" class="strength-item__img">
                </div><!-- /.strength-item__img-wrapper -->
             </div><!-- /.strength-item strength__items_item -->
             <div class="strength-item strength__items_item">
@@ -53,7 +53,7 @@
                   <p class="strength-item__desc">Engressの講師陣は、もともと日本人向けにTOEFLを教えていた人が大多数です。また全メンバーがTESOL(英語教授法)を取得しており、知識と経験を兼ね備えている教育のプロフェッショナルです。</p><!-- /.strength-item__desc -->
                </div><!-- /.strength-item__intro-wrapper -->
                <div class="strength-item__img-wrapper">
-                  <img src="./images/front/feature02.png" alt="特長2" class="strength-item__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/feature02.png" alt="特長2" class="strength-item__img">
                </div><!-- /.strength-item__img-wrapper -->
             </div><!-- /.strength-item strength__items_item -->
             <div class="strength-item strength__items_item">
@@ -63,7 +63,7 @@
                   <p class="strength-item__desc">Engressは高校生からサラリーマンまで様々な年齢層の方々が通われていますが、完全オーダーメイドのカリキュラムで柔軟に対応しているため、平均3ヶ月でTOEFLスコアを20点アップさせています。</p><!-- /.strength-item__desc -->
                </div><!-- /.strength-item__intro-wrapper -->
                <div class="strength-item__img-wrapper">
-                  <img src="./images/front/feature03.png" alt="特長3" class="strength-item__img">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/feature03.png" alt="特長3" class="strength-item__img">
                </div><!-- /.strength-item__img-wrapper -->
             </div><!-- /.strength-item strength__items_item -->
          </div><!-- /.strength-items strength__items-wrapper -->
@@ -89,7 +89,7 @@
                <div class="example-item example-items__item">
                   <p class="example-item__comment">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p><!-- /.example-item__comment -->
                   <div class="example-item__img-wrapper">
-                     <img src="./images/front/model01.png" alt="T.Fujiyamaさん" class="example-item__img">
+                     <img src="<?php echo get_template_directory_uri(); ?>/images/front/model01.png" alt="T.Fujiyamaさん" class="example-item__img">
                   </div><!-- /.example-item__img-wrapper -->
                   <div class="example-item__info">
                      <p class="example-item__job">会社員</p><!-- /.example-item__job -->
@@ -100,7 +100,7 @@
                <div class="example-item example-items__item">
                   <p class="example-item__comment">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p><!-- /.example-item__comment -->
                   <div class="example-item__img-wrapper">
-                     <img src="./images/front/model02.png" alt="Y.Takiyamaさん" class="example-item__img">
+                     <img src="<?php echo get_template_directory_uri(); ?>/images/front/model02.png" alt="Y.Takiyamaさん" class="example-item__img">
                   </div><!-- /.example-item__img-wrapper -->
                   <div class="example-item__info">
                      <p class="example-item__job">大学生</p><!-- /.example-item__job -->
@@ -111,7 +111,7 @@
                <div class="example-item example-items__item">
                   <p class="example-item__comment">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p><!-- /.example-item__comment -->
                   <div class="example-item__img-wrapper">
-                     <img src="./images/front/model03.png" alt="T.Fujiyamaさん" class="example-item__img">
+                     <img src="<?php echo get_template_directory_uri(); ?>/images/front/model03.png" alt="T.Fujiyamaさん" class="example-item__img">
                   </div><!-- /.example-item__img-wrapper -->
                   <div class="example-item__info">
                      <p class="example-item__job">高校生</p><!-- /.example-item__job -->
@@ -223,7 +223,7 @@
                         <div class="blog-item__contents">
                            <div class="blog-item__img-container">
                               <div class="blog-item__img-wrapper">
-                                 <img src="./images/front/sample01.png" alt="Engress説明会in大阪の模様をお伝えします" class="blog-item__img">
+                                 <img src="<?php echo get_template_directory_uri(); ?>/images/front/sample01.png" alt="Engress説明会in大阪の模様をお伝えします" class="blog-item__img">
                                  <p class="blog-item__category">カテゴリー</p><!-- /.blog-item__category -->
                               </div><!-- /.blog-item__img-wrapper -->
                            </div><!-- /.blog-item__img-container -->
@@ -241,7 +241,7 @@
                         <div class="blog-item__contents">
                            <div class="blog-item__img-container">
                               <div class="blog-item__img-wrapper">
-                                 <img src="./images/front/sample02.png" alt="Engressもくもく会でみんなで　TOEFL学習をしませんか？" class="blog-item__img">
+                                 <img src="<?php echo get_template_directory_uri(); ?>/images/front/sample02.png" alt="Engressもくもく会でみんなで　TOEFL学習をしませんか？" class="blog-item__img">
                                  <p class="blog-item__category">カテゴリー</p><!-- /.blog-item__category -->
                               </div><!-- /.blog-item__img-wrapper -->
                            </div><!-- /.blog-item__img-container -->
@@ -257,7 +257,7 @@
                         <div class="blog-item__contents">
                            <div class="blog-item__img-container">
                               <div class="blog-item__img-wrapper">
-                                 <img src="./images/front/sample03.png" alt="TOEFL学習にはコーチング学習が最強である話" class="blog-item__img">
+                                 <img src="<?php echo get_template_directory_uri(); ?>/images/front/sample03.png" alt="TOEFL学習にはコーチング学習が最強である話" class="blog-item__img">
                                  <p class="blog-item__category">カテゴリー</p><!-- /.blog-item__category -->
                               </div><!-- /.blog-item__img-wrapper -->
                            </div><!-- /.blog-item__img-container -->

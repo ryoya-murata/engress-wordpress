@@ -16,7 +16,7 @@
          <div class="header__contents-wrapper">
             <div class="header__contents">
                <div class="header__logo-wrapper">
-                  <img src="./images/front/logo2.png" alt="Engress" class="header__logo">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="header__logo">
                </div><!-- /.header__logo-wrapper -->
                <nav class="header__nav nav is-lg">
                   <ul class="menu">
@@ -51,13 +51,13 @@
                   </li><!-- /.-->
                </ul><!-- /.menu -->
                <h2 class="hamberger-menu__title">電話番号</h2><!-- /.hamberger-menu__title -->
-               <p class="hamberger__tel tel tel--color_primary"><img src="./images/front/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
+               <p class="hamberger__tel tel tel--color_primary"><img src="<?php echo get_template_directory_uri(); ?>/images/front/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
                <p class="hamberger__sale-time">平日08:00〜20:00</p><!-- /.hamberger__sale-time -->
             </nav>
             <div class="header__info-wrapper is-lg">
                <div class="header__info">
                   <p class="header__sale-time">平日08:00〜20:00</p><!-- /.header__sale-time -->
-                  <p class="header__tel tel tel--color_primary"><img src="./images/front/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
+                  <p class="header__tel tel tel--color_primary"><img src="<?php echo get_template_directory_uri(); ?>/images/front/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
                </div><!-- /.header__info -->
                <div class="header__buttons-wrapper">
                   <div class="header__button-wrapper">
