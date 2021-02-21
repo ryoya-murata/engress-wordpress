@@ -6,7 +6,7 @@
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
    <title>Engress</title>
-   
+
    <?php wp_head(); ?>
 </head>
 
@@ -18,16 +18,22 @@
                <div class="header__logo-wrapper">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="header__logo">
                </div><!-- /.header__logo-wrapper -->
+               <?php
+
+               $menu_name = 'header';
+               $locations = get_nav_menu_locations();
+               $menu = wp_get_nav_menu_object($locations[$menu_name]);
+               $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+               ?>
+
                <nav class="header__nav nav is-lg">
                   <ul class="menu">
-                     <li class="menu__item"><a href="#" class="menu__link">ホーム</a><!-- /.menu__link -->
-                     </li><!-- /.menu__item -->
-                     <li class="menu__item"><a href="#" class="menu__link">お知らせ</a><!-- /.menu__link -->
-                     </li><!-- /.menu__item -->
-                     <li class="menu__item"><a href="#" class="menu__link">ブログ</a><!-- /.menu__link -->
-                     </li><!-- /.menu__item -->
-                     <li class="menu__item"><a href="#" class="menu__link">コース・料金</a><!-- /.menu__link -->
-                     </li><!-- /.menu__item -->
+                     <?php foreach ($menu_items as $item) : ?>
+                        <li class="menu__item">
+                           <a href="<?php echo esc_url($item->url); ?>" class="menu__link"><?php echo esc_html($item->title); ?></a><!-- /.menu__link -->
+                        </li><!-- /.menu__item -->
+                     <?php endforeach; ?>
                   </ul><!-- /.menu -->
                </nav><!-- /.header__nav nav nav--blue -->
             </div><!-- /.header__contents -->
@@ -38,17 +44,22 @@
                   <span class="hamberger__line"></span>
                </div>
             </div>
+            <?php
+
+            $menu_name = 'header';
+            $locations = get_nav_menu_locations();
+            $menu = wp_get_nav_menu_object($locations[$menu_name]);
+            $menu_items = wp_get_nav_menu_items($menu->term_id);
+
+            ?>
             <nav class="hamberger-menu is-md">
                <h2 class="hamberger-menu__title">メニュー</h2><!-- /.hamberger-menu__title -->
                <ul class="menu">
-                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">ホーム</a><!-- /.-->
-                  </li><!-- /.-->
-                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">お知らせ</a><!-- /.-->
-                  </li><!-- /.-->
-                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">ブログ</a><!-- /.-->
-                  </li><!-- /.-->
-                  <li class="hamberger-menu__item"><a href="#" class="hamberger-menu__link">コース・料金</a><!-- /.-->
-                  </li><!-- /.-->
+                  <?php foreach ($menu_items as $item) : ?>
+                     <li class="hamberger-menu__item">
+                        <a href="<?php echo esc_url($item->url); ?>" class="hamberger-menu__link"><?php echo esc_html($item->title); ?></a><!-- /.-->
+                     </li><!-- /.-->
+                  <?php endforeach; ?>
                </ul><!-- /.menu -->
                <h2 class="hamberger-menu__title">電話番号</h2><!-- /.hamberger-menu__title -->
                <p class="hamberger__tel tel tel--color_primary"><img src="<?php echo get_template_directory_uri(); ?>/images/front/tel.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.header__tel tel tel--color_primary -->
@@ -70,6 +81,6 @@
             </div><!-- /.header__infomation-wrapper -->
          </div><!-- /.header__contents-wrapper -->
       </div><!-- /.inner inner--wide header__inner -->
-
+                     
 
    </header><!-- /.header -->
