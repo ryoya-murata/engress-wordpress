@@ -44,7 +44,7 @@
    </div><!-- /.fixed-buttons-container -->
 
 
-
+  <?php wp_footer(); ?>
 
 </body>
 
