@@ -28,14 +28,14 @@
                <a href="<?php the_permalink(); ?>" class="blog-archive__item-link">
                   <div class="blog-archive__item-contents blog-archive-item">
                      <div class="blog-archive-item__img-wrapper">
-                     <?php
-                                    if (has_post_thumbnail()) {
-                                       the_post_thumbnail('large');
-                                    } else {
-                                       echo '<img src="' . esc_url(get_template_directory_uri()) . '/images/front/noimg.png" alt="">';
-                                    }
-                                    ?>
-                                    <?php $category_obj = get_the_category(); ?>
+                        <?php
+                        if (has_post_thumbnail()) {
+                           the_post_thumbnail('large');
+                        } else {
+                           echo '<img src="' . esc_url(get_template_directory_uri()) . '/images/front/noimg.png" alt="">';
+                        }
+                        ?>
+                        <?php $category_obj = get_the_category(); ?>
                         <div class="blog-archive-item__category"><?php echo $category_obj[0]->cat_name; ?></div><!-- /.blog-archive-item__category -->
                      </div><!-- /.blog-archive-item__img-wrapper -->
                      <div class="blog-archive-item__info-wrapper">
@@ -47,15 +47,25 @@
                </a><!-- /.blog-archive__item-link -->
             <?php endwhile; ?>
          <?php endif; ?>
-
       </div><!-- /.blog-archive__items-wrapper -->
-      <div class="page-navi-wrapper">
-         <div class="page-navi">
 
-         </div><!-- /.page-navi -->
-      </div><!-- /.page-navi-wrapper -->
-   </div><!-- /.inner inner-middle -->
+
+      <?php if (paginate_links()) : ?>
+         <!-- pagenation -->
+         <div class="pagenation">
+            <?php
+            echo
+            paginate_links(
+               array(
+                  'end_size' =>1,
+                  'mid_size' => 2,
+                  'prev_next' => false,
+               )
+            );
+            ?>
+         </div><!-- /.pagenation -->
 </section><!-- /.page-section blog-archive -->
+<?php endif; ?>
 
 
 <div class="inquiry">

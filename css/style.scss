@@ -202,6 +202,60 @@ a {
 }
 
 
+.pagenation {
+  text-align: center;
+  font-size: 0;
+}
+
+.page-numbers {
+  display: inline-block;
+  margin-right: 19px;
+  width: 50px;
+  height: 50px;
+  padding: .7188em 0;
+  line-height: 1.6875;
+  text-align: center;
+  color: #fff;
+  background: #fff;
+  font-weight: bold;
+  color: $primary-color;
+  border: 1px solid $primary-color;
+  font-size: 16px;
+
+  &.current{
+    color: #fff;
+    background: $primary-color;
+  }
+
+  &.dots{
+    border: none;
+  }
+
+  @include mq("md"){
+    width: 34px;
+    height: 34px;
+    padding: .2em 0;
+    margin-right: 7px;
+
+    &.dots{
+      width: 14px;
+    }
+  }
+
+  @include mq("ss"){
+    width: 30px;
+    height: 30px;
+    padding: 0em 0;
+    margin-right: 4px;
+  }
+}
+
+.page-numbers:last-child {
+  margin-right: 0;
+}
+
+
+
 // =======================
 //  z-index
 // =======================
