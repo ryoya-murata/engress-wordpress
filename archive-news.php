@@ -39,10 +39,9 @@
         endif;
         ?>
       </div><!-- /.news-archive__items news-archive-items -->
-      <div class="page-navi">
 
-      </div><!-- /.page-navi -->
     </div><!-- /.news-archive__contents -->
+    <?php get_template_part('./template-parts/pagenation'); ?>
   </div><!-- /.inner inner--middle -->
 </section><!-- /.section page-section news-archive -->
 

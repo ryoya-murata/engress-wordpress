@@ -50,22 +50,8 @@
       </div><!-- /.blog-archive__items-wrapper -->
 
 
-      <?php if (paginate_links()) : ?>
-         <!-- pagenation -->
-         <div class="pagenation">
-            <?php
-            echo
-            paginate_links(
-               array(
-                  'end_size' =>1,
-                  'mid_size' => 2,
-                  'prev_next' => false,
-               )
-            );
-            ?>
-         </div><!-- /.pagenation -->
+     <?php get_template_part('./template-parts/pagenation'); ?>
 </section><!-- /.page-section blog-archive -->
-<?php endif; ?>
 
 
 <div class="inquiry">
