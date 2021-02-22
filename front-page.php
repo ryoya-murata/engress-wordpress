@@ -221,8 +221,8 @@
                <?php $args = array(
                   'post_type' => 'post',
                   'posts_per_page' => 3,
-               ); 
-               $blog_query = new WP_Query( $args );
+               );
+               $blog_query = new WP_Query($args);
                ?>
                <?php
                if ($blog_query->have_posts()) : while ($blog_query->have_posts()) : $blog_query->the_post();
@@ -256,27 +256,29 @@
             </div><!-- /.blog-items -->
          </section><!-- /.section blog posts-contents__blog -->
 
+
          <section class="section news posts-contents__news">
             <h2 class="section__title section__title--left">お知らせ</h2><!-- /.section__title section__title--left -->
             <div class="news-items">
-               <div class="news-item news-items__item">
-                  <a href="#" class="news-item__link">
-                     <time class="news-item__time" datetime="2020-12-01">2020-12-01</time><!-- /.news-item__time -->
-                     <h3 class="news-item__title">2021年のスケジュールについて</h3><!-- /.news-item__title -->
-                  </a><!-- /.news-item__link -->
-               </div><!-- /.news-item news-items__item -->
-               <div class="news-item news-items__item">
-                  <a href="#" class="news-item__link">
-                     <time class="news-item__time" datetime="2019-11-02">2019-11-02</time><!-- /.news-item__time -->
-                     <h3 class="news-item__title">11月休校日のお知らせ</h3><!-- /.news-item__title -->
-                  </a><!-- /.news-item__link -->
-               </div><!-- /.news-item news-items__item -->
-               <div class="news-item news-items__item">
-                  <a href="#" class="news-item__link">
-                     <time class="news-item__time" datetime="2020-10-01">2020-10-01</time><!-- /.news-item__time -->
-                     <h3 class="news-item__title">10月休校日のお知らせ</h3><!-- /.news-item__title -->
-                  </a><!-- /.news-item__link -->
-               </div><!-- /.news-item news-items__item -->
+               <?php
+               $args = [
+                  'post_type' => 'news',
+                  'posts_per_page' => 3,
+               ];
+               $news_query = new WP_Query($args);
+               if ($news_query->have_posts()) : while ($news_query->have_posts()) : $news_query->the_post();
+               ?>
+                     <div class="news-item news-items__item">
+                        <a href="<?php the_permalink(); ?>" class="news-item__link">
+                           <time class="news-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.news-item__time -->
+                           <h3 class="news-item__title"><?php the_title(); ?></h3><!-- /.news-item__title -->
+                        </a><!-- /.news-item__link -->
+                     </div><!-- /.news-item news-items__item -->
+               <?php
+                  endwhile;
+               endif;
+               wp_reset_postdata();
+               ?>
             </div><!-- /.news-items -->
          </section><!-- /.section news posts-contents__news -->
       </div><!-- /.posts-contents -->
