@@ -43,3 +43,26 @@ function my_menu_init()
   );
 }
 add_action('init', 'my_menu_init');
+
+
+/**
+ * パンくずタイトルの書き換え
+ *
+ * https://mtekk.us/code/breadcrumb-navxt/breadcrumb-navxt-doc/2/#bcn_breadcrumb_title
+ * @param object $title タイトル.
+ */
+function my_bcn_breadcrumb_title($title, $this_type, $this_id)
+{
+  if (is_post_type_archive('news')) {
+    $title = 'お知らせ';
+  } elseif (is_page('price')) {
+    $title = '料金体系';
+  } elseif (is_page('contact')) {
+    $title = 'お問い合わせ';
+  } elseif (is_home()) {
+    $title = 'ブログ';
+  }
+
+  return $title;
+};
+add_filter('bcn_breadcrumb_title', 'my_bcn_breadcrumb_title', 10, 3);

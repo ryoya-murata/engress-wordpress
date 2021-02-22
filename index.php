@@ -4,18 +4,12 @@
 
 <div class="page-firstview">
    <div class="page-firstview__img-wrapper">
-      <img src="./images/page/blog2.png" alt="ブログ" class="page-firstview__img">
+      <img src="<?php echo get_template_directory_uri(); ?>/images/page/blog2.png" alt="ブログ" class="page-firstview__img">
    </div><!-- /.page-firstview__img-wrapper -->
    <h2 class="page-firstview__title">ブログ</h2><!-- /.page-firstview__title -->
 </div><!-- /.page-firstview -->
 
-<div class="breadcrumb-wrapper">
-   <div class="inner inner--middle">
-      <div class="breadcrumb">
-
-      </div><!-- /.breadcrumb -->
-   </div><!-- /.inner inner--middle -->
-</div><!-- /.breadcrumb-wrapper -->
+<?php get_template_part('./template-parts/breadcrumb'); ?>
 
 <section class="section page-section blog-archive">
    <div class="inner inner--middle">

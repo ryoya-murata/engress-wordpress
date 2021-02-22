@@ -1,13 +1,8 @@
 <?php get_header(); ?>
 
 
-<div class="breadcrumb-wrapper breadcrumb-wrapper--mt">
-   <div class="inner inner--middle">
-      <div class="breadcrumb">
+<?php get_template_part('./template-parts/breadcrumb'); ?>
 
-      </div><!-- /.breadcrumb -->
-   </div><!-- /.inner inner--middle -->
-</div><!-- /.breadcrumb-wrapper -->
 
 <?php
 if (have_posts()) :

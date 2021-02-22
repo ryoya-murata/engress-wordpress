@@ -254,6 +254,26 @@ a {
   margin-right: 0;
 }
 
+.breadcrumb{
+  font-size: .75em;
+  padding: .8em 0;
+  color: $primary-color;
+  font-weight: 500;
+
+  a,span{
+    line-height: 1.6667;
+  }
+
+  a{
+    text-decoration: underline;
+    text-decoration-thickness: 1px;
+  }
+
+  @include mq("md"){
+    padding: .5em 0;
+  }
+}
+
 
 
 // =======================

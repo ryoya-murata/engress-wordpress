@@ -2,18 +2,13 @@
 
 <div class="page-firstview">
   <div class="page-firstview__img-wrapper">
-    <img src="./images/page/plan2.png" alt="コース・料金" class="page-firstview__img">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/page/plan2.png" alt="コース・料金" class="page-firstview__img">
   </div><!-- /.page-firstview__img-wrapper -->
   <h2 class="page-firstview__title">お知らせ</h2><!-- /.page-firstview__title -->
 </div><!-- /.page-firstview -->
 
-<div class="breadcrumb-wrapper">
-  <div class="inner inner--middle">
-    <div class="breadcrumb">
+<?php get_template_part('./template-parts/breadcrumb'); ?>
 
-    </div><!-- /.breadcrumb -->
-  </div><!-- /.inner inner--middle -->
-</div><!-- /.breadcrumb-wrapper -->
 
 <section class="section page-section news-archive">
   <div class="inner inner--middle">

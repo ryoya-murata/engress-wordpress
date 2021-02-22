@@ -2,18 +2,12 @@
 
 <div class="page-firstview">
   <div class="page-firstview__img-wrapper">
-    <img src="./images/page/plan2.png" alt="コース・料金" class="page-firstview__img">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/page/plan2.png" alt="コース・料金" class="page-firstview__img">
   </div><!-- /.page-firstview__img-wrapper -->
   <h2 class="page-firstview__title">コース・料金</h2><!-- /.page-firstview__title -->
 </div><!-- /.page-firstview -->
 
-<div class="breadcrumb-wrapper">
-  <div class="inner inner--middle">
-    <div class="breadcrumb">
-
-    </div><!-- /.breadcrumb -->
-  </div><!-- /.inner inner--middle -->
-</div><!-- /.breadcrumb-wrapper -->
+<?php get_template_part('./template-parts/breadcrumb'); ?>
 
 <section class="section page-section price-system">
   <div class="inner inner--middle">
@@ -73,7 +67,7 @@
           <h3 class="price-table-item__title">おすすめ<br>志望校対策プラン</h3><!-- /.price-table-item__title -->
         </div><!-- /.price-table-item__title-wrapper -->
         <div class="price-table-item__body">
-        <?php if (get_field('price-prepare')) : ?>
+          <?php if (get_field('price-prepare')) : ?>
             <p class="price-table-item__price">
               <?php the_field('price-prepare'); ?>円~</p><!-- /.price-table-item__price -->
             <p class="price-table-item__price-desc">*月額（税抜価格）</p><!-- /.price-table-item__price-desc -->
@@ -92,7 +86,7 @@
           <h3 class="price-table-item__title">フレックスプラン</h3><!-- /.price-table-item__title -->
         </div><!-- /.price-table-item__title-wrapper -->
         <div class="price-table-item__body">
-        <?php if (get_field('price-flex')) : ?>
+          <?php if (get_field('price-flex')) : ?>
             <p class="price-table-item__price">
               <?php the_field('price-flex'); ?>円~</p><!-- /.price-table-item__price -->
             <p class="price-table-item__price-desc">*月額（税抜価格）</p><!-- /.price-table-item__price-desc -->
