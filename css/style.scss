@@ -2524,6 +2524,10 @@ label[for="request"] {
   margin-bottom: 0.8438em;
 }
 
+label{
+  cursor: pointer;
+}
+
 .form-item__input {
   width: 100%;
   padding: 0.6563em 1.25em;
@@ -2620,6 +2624,8 @@ label[for="request"] {
     left: 5px;
   }
 }
+
+
 
 .form-item__radio {
   display: none;

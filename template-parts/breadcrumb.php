@@ -1,6 +1,6 @@
 
 <div class="breadcrumb-wrapper 
-<?php if(is_single()){
+<?php if(is_single() || is_page('complete')){
   echo "breadcrumb-wrapper--mt";
 } ?>">
   <div class="inner inner--middle">
