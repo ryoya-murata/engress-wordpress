@@ -1969,6 +1969,7 @@ $layer: (
   margin-right: 5.5556%;
   height: 179px;
 
+
   @include mq("lg") {
     flex: 0 0 220px;
     height: auto;
@@ -1996,6 +1997,7 @@ $layer: (
       left: 0;
       right: 0;
       bottom: 0;
+      object-fit: cover;
     }
 
     &:last-child {

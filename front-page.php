@@ -315,8 +315,8 @@
    </div><!-- /.inner inner--middle -->
 </div><!-- /.posts-contents -->
 
-<?php get_template_directory_uri('./template-parts/inquiry'); ?>
+<?php get_template_part('./template-parts/inquiry'); ?>
 
-<?php get_template_directory_uri('./template-parts/tel.php'); ?>
+<?php get_template_part('./template-parts/tel'); ?>
 
 <?php get_footer(); ?>

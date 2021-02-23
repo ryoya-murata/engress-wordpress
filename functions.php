@@ -78,3 +78,13 @@ function title_character_count_limit($count = 40){
 }
 
 
+
+function new_excerpt_mblength($length) {
+     return 20; //抜粋する文字数を50文字に設定
+}
+add_filter('excerpt_mblength', 'new_excerpt_mblength');
+
+function new_excerpt_more($more) {
+    return '···';
+}
+add_filter('excerpt_more', 'new_excerpt_more');

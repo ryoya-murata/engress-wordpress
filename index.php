@@ -3,7 +3,7 @@
 
 
 <div class="page-firstview">
-   <div class="page-firstview__img-wrapper">
+   <div class="page-firstview__img-wrapper" >
       <img src="<?php echo get_template_directory_uri(); ?>/images/page/blog2.png" alt="ブログ" class="page-firstview__img">
    </div><!-- /.page-firstview__img-wrapper -->
    <h2 class="page-firstview__title">ブログ</h2><!-- /.page-firstview__title -->
@@ -34,7 +34,7 @@
                      </div><!-- /.blog-archive-item__img-wrapper -->
                      <div class="blog-archive-item__info-wrapper">
                         <time class="blog-archive-item__time" datatime="<?php the_time('c'); ?>"><?php the_time('Y-n-j') ?></time><!-- /.blog-archive-item__time -->
-                        <h3 class="blog-archive-item__title"><?php the_title(); ?></h3><!-- /.blog-archive-item__title -->
+                        <h3 class="blog-archive-item__title"><?php title_character_count_limit(30); ?></h3><!-- /.blog-archive-item__title -->
                         <p class="blog-archive-item__excerpt"><?php the_excerpt(); ?></p><!-- /.blog-archive-item__excerpt -->
                      </div><!-- /.blog-archive-item__info-wrapper -->
                   </div><!-- /.blog-archive__item-contents -->
@@ -50,9 +50,9 @@
 
 
 
-<?php get_template_directory_uri('./template-parts/inquiry'); ?>
+<?php get_template_part('./template-parts/inquiry'); ?>
 
-<?php get_template_directory_uri('./template-parts/tel.php'); ?>
+<?php get_template_part('./template-parts/tel'); ?>
 
 
 <?php get_footer(); ?>
