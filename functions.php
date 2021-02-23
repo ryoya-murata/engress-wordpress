@@ -66,3 +66,15 @@ function my_bcn_breadcrumb_title($title, $this_type, $this_id)
   return $title;
 };
 add_filter('bcn_breadcrumb_title', 'my_bcn_breadcrumb_title', 10, 3);
+
+function title_character_count_limit($count = 40){
+  global $post;
+  if(mb_strlen($post->post_title, 'UTF-8')>$count){
+      $title = mb_substr($post->post_title, 0, $count, 'UTF-8');
+    echo $title.'···';
+  }else{
+    echo $post->post_title;
+  }
+}
+
+

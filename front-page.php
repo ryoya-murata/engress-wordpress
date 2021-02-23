@@ -87,37 +87,67 @@
       <div class="example-itesm-wrapper">
          <div class="example-items">
             <div class="example-item example-items__item">
-               <p class="example-item__comment">TOEFL iBT 100点を突破してコロンビア大学大学院に進学できました！</p><!-- /.example-item__comment -->
+               <?php if (get_field('comment-first')) : ?>
+                  <p class="example-item__comment"><?php the_field('comment-first'); ?></p><!-- /.example-item__comment -->
+               <?php endif; ?>
                <div class="example-item__img-wrapper">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/model01.png" alt="T.Fujiyamaさん" class="example-item__img">
+                  <?php if (get_field('img-first')) : ?>
+                     <img src="<?php the_field('img-first'); ?>" alt="写真" class="example-item__img">
+                  <?php endif; ?>
                </div><!-- /.example-item__img-wrapper -->
                <div class="example-item__info">
-                  <p class="example-item__job">会社員</p><!-- /.example-item__job -->
-                  <p class="example-item__name">T.Fujiyamaさん</p><!-- /.example-item__name -->
+                  <?php if (get_field('work-first')) : ?>
+                     <p class="example-item__job"><?php the_field('work-first'); ?></p><!-- /.example-item__job -->
+                  <?php endif; ?>
+                  <?php if (get_field('name-first')) : ?>
+                     <p class="example-item__name"><?php the_field('name-first'); ?></p><!-- /.example-item__name -->
+                  <?php endif; ?>
                </div><!-- /.example-item__info -->
-               <p class="example-item__result">3ヶ月でTOEFL80→108点</p><!-- /.example-item__result -->
+               <?php if (get_field('result-first')) : ?>
+                  <p class="example-item__result"><?php the_field('result-first'); ?></p><!-- /.example-item__result -->
+               <?php endif; ?>
             </div><!-- /.example-item example-items__item -->
             <div class="example-item example-items__item">
-               <p class="example-item__comment">半年でTOEFL 40点→100点を達成！コロンビア大学大学院に合格</p><!-- /.example-item__comment -->
+               <?php if (get_field('comment-second')) : ?>
+                  <p class="example-item__comment"><?php the_field('comment-second'); ?></p><!-- /.example-item__comment -->
+               <?php endif; ?>
                <div class="example-item__img-wrapper">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/model02.png" alt="Y.Takiyamaさん" class="example-item__img">
+                  <?php if (get_field('img-second')) : ?>
+                     <img src="<?php the_field('img-second'); ?>" alt="写真" class="example-item__img">
+                  <?php endif; ?>
                </div><!-- /.example-item__img-wrapper -->
                <div class="example-item__info">
-                  <p class="example-item__job">大学生</p><!-- /.example-item__job -->
-                  <p class="example-item__name">Y.Takiyamaさん</p><!-- /.example-item__name -->
+                  <?php if (get_field('work-second')) : ?>
+                     <p class="example-item__job"><?php the_field('work-second'); ?></p><!-- /.example-item__job -->
+                  <?php endif; ?>
+                  <?php if (get_field('name-second')) : ?>
+                     <p class="example-item__name"><?php the_field('name-second'); ?></p><!-- /.example-item__name -->
+                  <?php endif; ?>
                </div><!-- /.example-item__info -->
-               <p class="example-item__result">6ヶ月でTOEFL40→100点</p><!-- /.example-item__result -->
+               <?php if (get_field('result-second')) : ?>
+                  <p class="example-item__result"><?php the_field('result-second'); ?></p><!-- /.example-item__result -->
+               <?php endif; ?>
             </div><!-- /.example-item example-items__item -->
             <div class="example-item example-items__item">
-               <p class="example-item__comment">早稲田大学 国際教養学部AO入試合格！TOEFL iBT 109点</p><!-- /.example-item__comment -->
+               <?php if (get_field('comment-third')) : ?>
+                  <p class="example-item__comment"><?php the_field('comment-third'); ?></p><!-- /.example-item__comment -->
+               <?php endif; ?>
                <div class="example-item__img-wrapper">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/model03.png" alt="T.Fujiyamaさん" class="example-item__img">
+                  <?php if (get_field('img-third')) : ?>
+                     <img src="<?php the_field('img-third'); ?>" alt="写真" class="example-item__img">
+                  <?php endif; ?>
                </div><!-- /.example-item__img-wrapper -->
                <div class="example-item__info">
-                  <p class="example-item__job">高校生</p><!-- /.example-item__job -->
-                  <p class="example-item__name">M.Yamadaさん</p><!-- /.example-item__name -->
+                  <?php if (get_field('work-third')) : ?>
+                     <p class="example-item__job"><?php the_field('work-third'); ?></p><!-- /.example-item__job -->
+                  <?php endif; ?>
+                  <?php if (get_field('name-third')) : ?>
+                     <p class="example-item__name"><?php the_field('name-third'); ?></p><!-- /.example-item__name -->
+                  <?php endif; ?>
                </div><!-- /.example-item__info -->
-               <p class="example-item__result">5ヶ月でTOEFL68→109点</p><!-- /.example-item__result -->
+               <?php if (get_field('result-third')) : ?>
+                  <p class="example-item__result"><?php the_field('result-third'); ?></p><!-- /.example-item__result -->
+               <?php endif; ?>
             </div><!-- /.example-item example-items__item -->
          </div><!-- /.example-items -->
       </div><!-- /.example-itesm-wrapper -->
@@ -244,7 +274,7 @@
                                  </div><!-- /.blog-item__img-wrapper -->
                               </div><!-- /.blog-item__img-container -->
                               <div class="blog-item__info-wrapper">
-                                 <h3 class="blog-item__title"><?php the_title(); ?></h3><!-- /.blog-item__title -->
+                                 <h3 class="blog-item__title"><?php title_character_count_limit(26); ?></h3><!-- /.blog-item__title -->
                                  <time class="blog-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.blog-item__time -->
                               </div><!-- /.blog-item__info-wrapper -->
                            </div><!-- /.blog-item__contents -->
@@ -271,7 +301,7 @@
                      <div class="news-item news-items__item">
                         <a href="<?php the_permalink(); ?>" class="news-item__link">
                            <time class="news-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.news-item__time -->
-                           <h3 class="news-item__title"><?php the_title(); ?></h3><!-- /.news-item__title -->
+                           <h3 class="news-item__title"><?php title_character_count_limit(30); ?></h3><!-- /.news-item__title -->
                         </a><!-- /.news-item__link -->
                      </div><!-- /.news-item news-items__item -->
                <?php
