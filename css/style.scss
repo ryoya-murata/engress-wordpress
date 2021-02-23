@@ -152,7 +152,7 @@ $breakpoints: (
   transition: all 0.3s;
 
   &:hover {
-    opacity: 0.7;
+    opacity: .7;
   }
 }
 
@@ -160,6 +160,11 @@ $breakpoints: (
   background: $color-yellow;
   color: #fff;
   transition: all 0.3s;
+
+  &:hover{
+    opacity: 1;
+    background: #f8c53a;
+  }
 }
 
 .button--shape_square {
@@ -349,6 +354,10 @@ $layer: (
     flex: 0 1 120px;
     margin-right: 1em;
   }
+}
+
+.header__logo-link{
+  display: block;
 }
 
 .menu {
@@ -928,6 +937,12 @@ $layer: (
   @include mq("md") {
     padding: 0.4em 2em;
   }
+  
+  &:hover{
+    opacity: 1;
+    background: #fff;
+    color: $primary-color;
+  }
 }
 
 // =======================
@@ -1492,6 +1507,10 @@ $layer: (
     margin-right: 0;
     width: 160px;
   }
+}
+
+.footer__logo-link{
+  display: block;
 }
 
 .footer__tel {

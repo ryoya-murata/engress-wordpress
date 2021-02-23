@@ -20,7 +20,9 @@
          </nav><!-- /.footer__nav nav -->
          <div class="footer__info-wrapper">
             <div class="footer__logo-wrapper">
-               <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="footer__logo">
+               <a href="<?php echo esc_url(home_url('/')); ?>" class="footer__logo-link">
+                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="footer__logo">
+               </a><!-- /.footer__logo-link -->
             </div><!-- /.footer__logo-wrapper -->
             <p class="footer__tel tel tel--color_white tel--right"><img src="<?php echo get_template_directory_uri(); ?>/images/front/tel-white.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.footer__tel tel tel--color_white -->
             <p class="footer__sale-time">平日08:00〜20:00</p><!-- /.footer__sale-time -->

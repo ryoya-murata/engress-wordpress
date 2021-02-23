@@ -17,7 +17,9 @@
          <div class="header__contents-wrapper">
             <div class="header__contents">
                <div class="header__logo-wrapper">
+                  <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo-link">
                   <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="header__logo">
+                  </a><!-- /.header__logo-link -->
                </div><!-- /.header__logo-wrapper -->
                <?php
 
@@ -73,10 +75,10 @@
                </div><!-- /.header__info -->
                <div class="header__buttons-wrapper">
                   <div class="header__button-wrapper">
-                     <a href="#" class="button button--color_yellow button--shape_square button--size_s button--request">資料請求</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
+                     <a href="<?php echo esc_url(home_url('/')); ?>" class="button button--color_yellow button--shape_square button--size_s button--request">資料請求</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
                   </div><!-- /.header__button-wrapper -->
                   <div class="header__button-wrapper">
-                     <a href="#" class="button button--color_primary button--shape_square button--size_s button--inquiry">お問い合わせ</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
+                     <a href="<?php echo esc_url(home_url('contact')); ?>" class="button button--color_primary button--shape_square button--size_s button--inquiry">お問い合わせ</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
                   </div><!-- /.header__button-wrapper -->
                </div><!-- /.header__buttons-wrapper -->
             </div><!-- /.header__infomation-wrapper -->

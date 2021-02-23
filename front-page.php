@@ -7,10 +7,10 @@
       <h1 class="first-view__title">TOEFL対策はEngress</h1><!-- /.first-view__title -->
       <p class="first-view__desc">日本人へのTOEFL指導歴豊かな講師陣の<br class="isnot-ss">コーチング型TOEFLスクール</p><!-- /.first-view__desc -->
       <div class="first-view__button-wrapper button-wrapper button-wrapper--center">
-         <a href="#" class="button button--shape_circle button--color_yellow button--size_m">資料請求</a><!-- /.button button--circle button--color__yellow button--size_m -->
+         <a href="<?php echo esc_url(home_url('/')); ?>" class="button button--shape_circle button--color_yellow button--size_m">資料請求</a><!-- /.button button--circle button--color__yellow button--size_m -->
       </div><!-- /.first-view__button-wrapper button-wrapper button-wrapper--center -->
       <div class="first-view__link-wrapper">
-         <a href="#" class="first-view__link">お問い合わせ</a><!-- /.first-view__link -->
+         <a href="<?php echo esc_url(home_url('contact')); ?>" class="first-view__link">お問い合わせ</a><!-- /.first-view__link -->
       </div><!-- /.first-view__link-wrapper -->
    </div><!-- /.inner inner--narrow -->
 </div><!-- /.first-view -->
@@ -75,7 +75,7 @@
       <div class="price__contents">
          <h2 class="price__title">Engressの料金プランはこちら</h2><!-- /.price__title -->
          <div class="button-wrapper button-wrapper--center">
-            <a href="#" class="button  button--color_transparent button--shape_circle price__button">料金を見てみる</a><!-- /.button button--size_s button--color_transparent -->
+            <a href="<?php echo esc_url(home_url('price')); ?>" class="button  button--color_transparent button--shape_circle price__button">料金を見てみる</a><!-- /.button button--size_s button--color_transparent -->
          </div><!-- /.button-wrapper button-wrapper--center -->
       </div><!-- /.price__contents -->
    </div><!-- /.inner inner--middle -->
@@ -319,10 +319,10 @@
    <div class="inner inner--narrow">
       <h3 class="inquiry__title">まずは無料で資料請求から</h3><!-- /.inquiry__title -->
       <div class="button-wrapper button-wrapper--center inquiry__button-wrapper">
-         <a href="#" class="button button--size_l button--color_yellow button--shape_circle">資料請求</a><!-- /.button button--size_l button--color_yellow button--circle -->
+         <a href="<?php echo esc_url(home_url('/')); ?>" class="button button--size_l button--color_yellow button--shape_circle">資料請求</a><!-- /.button button--size_l button--color_yellow button--circle -->
       </div><!-- /.button-wrapper button-wrapper--center inquiry__button-wrapper -->
       <div class="inquiry__link-wrapper">
-         <a href="#" class="inquiry__link">お問い合わせ</a><!-- /.inquiry__link -->
+         <a href="<?php echo esc_url(home_url('contact')); ?>" class="inquiry__link">お問い合わせ</a><!-- /.inquiry__link -->
       </div><!-- /.inquiry__link-wrapper -->
    </div><!-- /.inner inner--narrow -->
 </div><!-- /.inquiry -->
