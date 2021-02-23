@@ -3,7 +3,7 @@
       <div class="footer__contents">
          <?php
 
-         $menu_name = 'header';
+         $menu_name = 'footer';
          $locations = get_nav_menu_locations();
          $menu = wp_get_nav_menu_object($locations[$menu_name]);
          $menu_items = wp_get_nav_menu_items($menu->term_id);
@@ -20,9 +20,9 @@
          </nav><!-- /.footer__nav nav -->
          <div class="footer__info-wrapper">
             <div class="footer__logo-wrapper">
-               <img src="./images/front/logo2.png" alt="Engress" class="footer__logo">
+               <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="footer__logo">
             </div><!-- /.footer__logo-wrapper -->
-            <p class="footer__tel tel tel--color_white tel--right"><img src="./images/front/tel-white.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.footer__tel tel tel--color_white -->
+            <p class="footer__tel tel tel--color_white tel--right"><img src="<?php echo get_template_directory_uri(); ?>/images/front/tel-white.svg" alt="tel" class="tel__icon">0123-456-7890</p><!-- /.footer__tel tel tel--color_white -->
             <p class="footer__sale-time">平日08:00〜20:00</p><!-- /.footer__sale-time -->
          </div><!-- /.footer__info-wrapper -->
       </div><!-- /.footer__contents -->
@@ -47,6 +47,7 @@
       </div><!-- /.fixed-buttons-container__contents -->
    </div><!-- /.inner -->
 </div><!-- /.fixed-buttons-container -->
+
 
 
 <?php wp_footer(); ?>
