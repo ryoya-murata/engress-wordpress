@@ -30,7 +30,7 @@
                 ?>
               </div><!-- /.blog-related-item__img-wrapper -->
               <div class="blog-related-item__title-wrapper">
-                <h3 class="blog-related-item__title"><?php title_character_count_limit(20); ?></h3><!-- /.blog-related-item__title -->
+                <h3 class="blog-related-item__title"><?php title_character_count_limit(17); ?></h3><!-- /.blog-related-item__title -->
               </div><!-- /.blog-related-item__title-wrapper -->
             </div><!-- /.blog-related-item blog-related-items__item -->
           </a><!-- /.blog-related-items__link -->

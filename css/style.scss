@@ -152,7 +152,7 @@ $breakpoints: (
   transition: all 0.3s;
 
   &:hover {
-    opacity: .7;
+    opacity: 0.7;
   }
 }
 
@@ -161,7 +161,7 @@ $breakpoints: (
   color: #fff;
   transition: all 0.3s;
 
-  &:hover{
+  &:hover {
     opacity: 1;
     background: #f8c53a;
   }
@@ -356,7 +356,7 @@ $layer: (
   }
 }
 
-.header__logo-link{
+.header__logo-link {
   display: block;
 }
 
@@ -937,8 +937,8 @@ $layer: (
   @include mq("md") {
     padding: 0.4em 2em;
   }
-  
-  &:hover{
+
+  &:hover {
     opacity: 1;
     background: #fff;
     color: $primary-color;
@@ -1509,7 +1509,7 @@ $layer: (
   }
 }
 
-.footer__logo-link{
+.footer__logo-link {
   display: block;
 }
 
@@ -1969,7 +1969,6 @@ $layer: (
   margin-right: 5.5556%;
   height: 179px;
 
-
   @include mq("lg") {
     flex: 0 0 220px;
     height: auto;
@@ -2315,37 +2314,30 @@ $layer: (
   position: relative;
   height: 70px;
 
+  img {
+    display: block;
+    object-fit: cover;
+  }
+
   @include mq("lg") {
     height: auto;
-    
+
     &::before {
       content: "";
       display: block;
       padding-top: 60.9524%;
     }
+  }
 
-    @include mq("md") {
-      flex: 0 0 35.5932%;
-      margin-right: 5.4232%;
-    }
+  @include mq("md") {
+    flex: 0 0 35.5932%;
+    margin-right: 5.4232%;
+  }
 
-    &::before {
-      content: "";
-      display: block;
-      padding-top: 70%;
-
-      @include mq("md") {
-        padding-top: 60.9524%;
-      }
-    }
-
-    img {
-      position: absolute;
-      top: 0;
-      left: 0;
-      display: block;
-      object-fit: cover;
-    }
+  img {
+    position: absolute;
+    top: 0;
+    left: 0;
   }
 }
 
@@ -2372,34 +2364,28 @@ $layer: (
   }
 }
 
-
-
-
 .blog-category ul li {
-  border-bottom:none;
-  font-weight:bold;
-  
-  &::before{
+  border-bottom: none;
+  font-weight: bold;
+
+  &::before {
     content: "・";
   }
 
-  a{
+  a {
     display: inline-block;
   }
- }
-  
- .blog-category ul li.cat-item ul.children {
-   padding-left: 15px;
- }
-  
- .blog-category ul li.cat-item ul.children
- li a{
-  display: inline-block;
-  line-height:2.4375;
-  font-weight: bold;
+}
 
-  
- }
+.blog-category ul li.cat-item ul.children {
+  padding-left: 15px;
+}
+
+.blog-category ul li.cat-item ul.children li a {
+  display: inline-block;
+  line-height: 2.4375;
+  font-weight: bold;
+}
 
 // =======================
 //  news-archive
@@ -2559,7 +2545,7 @@ label[for="request"] {
   margin-bottom: 0.8438em;
 }
 
-label{
+label {
   cursor: pointer;
 }
 
@@ -2659,8 +2645,6 @@ label{
     left: 5px;
   }
 }
-
-
 
 .form-item__radio {
   display: none;
@@ -2816,4 +2800,3 @@ label{
   font-weight: 500;
   text-decoration: underline;
 }
-
