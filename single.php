@@ -19,9 +19,12 @@
               <h2 class="blog-single-item__title"><?php the_title(); ?></h2><!-- /.blog-single-item__title -->
               <div class="blog-single-item__info-wrapper">
                 <div class="blog-single-item__sns-wrapper">
-                  <a href="#" class="blog-single-item__like-button  blog-single-item__sns-button button"><i class="fas fa-thumbs-up blog-single-item__sns-icon"></i>Like！ 0</a><!-- /.like-button button -->
-                  <a href="#" class="blog-single-item__share-button blog-single-item__sns-button button">Share</a><!-- /.share-button button -->
-                  <a href="#" class="blog-single-item__tweet-button blog-single-item__sns-button button"><i class="fab fa-twitter blog-single-item__sns-icon"></i>ツイート</a><!-- /.tweet-button button -->
+                  <?php
+                  // ソーシャルブックマークボタンを出力する
+                  if (function_exists('wp_social_bookmarking_light_output_e')) {
+                    wp_social_bookmarking_light_output_e();
+                  }
+                  ?>
                 </div><!-- /.blog-single-item__sns-wrapper -->
                 <time class="blog-single-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.blog-single-item__time -->
               </div><!-- /.blog-single-item__info-wrapper -->
@@ -68,7 +71,7 @@
                     </div><!-- /.blog-pickup-item__img-wrapper -->
                     <div class="blog-pickup-item__info-wrapper">
                       <time class="blog-pickup-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.blog-pickup-item__time -->
-                      <h3 class="blog-pickup-item__title"><?php the_title(); ?></h3><!-- /.blog-pickup-item__title -->
+                      <h3 class="blog-pickup-item__title"><?php title_character_count_limit(30); ?></h3><!-- /.blog-pickup-item__title -->
                     </div><!-- /.blog-pickup-item__info-wrapper -->
                   </div><!-- /.blog-pickup__item blog-pickup-item -->
                 </a><!-- /.blog-pickup__items-link -->

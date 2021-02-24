@@ -2098,7 +2098,7 @@ $layer: (
 .blog-single-item__title {
   font-size: 1.75em;
   line-height: 1.5;
-  margin-bottom: 0.4643em;
+  margin-bottom: 1em;
   font-weight: bold;
 
   @include mq("md") {
@@ -2121,6 +2121,15 @@ $layer: (
   @include mq("sm") {
     flex-direction: column-reverse;
     align-items: flex-start;
+  }
+}
+
+.blog-single-item__sns-wrapper{
+  margin-bottom: -5px;
+  margin-left: -10px;
+
+  @include mq("sm"){
+    margin-bottom: 0;
   }
 }
 
@@ -2386,6 +2395,12 @@ $layer: (
   line-height: 2.4375;
   font-weight: bold;
 }
+
+.wsbl_facebook_like{
+  margin: 0!important;
+  width: 83px!important;
+}
+
 
 // =======================
 //  news-archive
