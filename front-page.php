@@ -301,7 +301,7 @@
                      <div class="news-item news-items__item">
                         <a href="<?php the_permalink(); ?>" class="news-item__link">
                            <time class="news-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.news-item__time -->
-                           <h3 class="news-item__title"><?php title_character_count_limit(30); ?></h3><!-- /.news-item__title -->
+                           <h3 class="news-item__title"><?php title_character_count_limit(40); ?></h3><!-- /.news-item__title -->
                         </a><!-- /.news-item__link -->
                      </div><!-- /.news-item news-items__item -->
                <?php

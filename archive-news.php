@@ -25,7 +25,7 @@
                   <time class="news-archive-item__time" datetime="<?php the_time('Y-n-j'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.news-archive-item__time -->
                 </div><!-- /.news-archive-item__time-wrapper -->
                 <div class="news-archive-item__title-wrapper">
-                  <h3 class="news-archive-item__title"><?php the_title(); ?></h3><!-- /.news-archive-item__title -->
+                  <h3 class="news-archive-item__title"><?php title_character_count_limit(45); ?></h3><!-- /.news-archive-item__title -->
                 </div><!-- /.news-archive-item__title-wrapper -->
               </div><!-- /.news-archive-item_contents -->
             </a><!-- /.news-archive-item news-archive-items__item -->

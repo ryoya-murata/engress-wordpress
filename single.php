@@ -33,15 +33,13 @@
                 </div><!-- /.blog-single-item__sns-wrapper -->
                 <time class="blog-single-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.blog-single-item__time -->
               </div><!-- /.blog-single-item__info-wrapper -->
-              <div class="blog-single-item__img-wrapper">
                 <?php
-                if (has_post_thumbnail()) {
-                  the_post_thumbnail('large');
-                } else {
-                  echo '<img src="' . esc_url(get_template_directory_uri()) . '/images/front/noimg.png" alt="">';
-                }
+                if (has_post_thumbnail()) :
                 ?>
+              <div class="blog-single-item__img-wrapper">
+                <?php  the_post_thumbnail('large'); ?>
               </div><!-- /.blog-single-item__img-wrapper -->
+              <?php endif; ?>
               <div class="blog-single-item__contents-wrapper">
                 <?php the_content(); ?>
               </div><!-- /.blog-single-item__contents-wrapper -->

@@ -1969,6 +1969,10 @@ $layer: (
   margin-right: 5.5556%;
   height: 179px;
 
+  img{
+    height: 179px;
+  }
+
   @include mq("lg") {
     flex: 0 0 220px;
     height: auto;
@@ -1976,6 +1980,10 @@ $layer: (
 
   @include mq("md") {
     margin-right: 3%;
+
+   img{
+     height: 150px;
+   }
   }
 
   @include mq("sm") {
@@ -1991,6 +1999,7 @@ $layer: (
     }
 
     img {
+      height:100%;
       position: absolute;
       top: 0;
       left: 0;
@@ -2309,45 +2318,60 @@ $layer: (
 .blog-related-items__link {
   display: block;
   margin-bottom: 2.625em;
+
+  @include mq("md"){
+    margin-bottom: 1em;
+  }
 }
 
 .blog-related-item {
   display: flex;
   align-items: flex-start;
+
 }
 
 .blog-related-item__img-wrapper {
   flex: 0 0 37.1737%;
   min-width: 80px;
-  margin-right: 1.0625em;
+  margin-right: 6.3197%;
   position: relative;
   height: 70px;
 
   img {
     display: block;
-    object-fit: cover;
+    height: 100%;
   }
 
   @include mq("lg") {
     height: auto;
+    margin-right: 4%;
+    flex: 0 0 24%;
 
     &::before {
       content: "";
       display: block;
-      padding-top: 60.9524%;
+      padding-top: 92.9524%;
+    }
+
+    img {
+      position: absolute;
+      top: 0;
+      left: 0;
     }
   }
 
   @include mq("md") {
     flex: 0 0 35.5932%;
     margin-right: 5.4232%;
+
+    &::before{
+      padding-top: 60.9524%;
+    }
   }
 
-  img {
-    position: absolute;
-    top: 0;
-    left: 0;
-  }
+ 
+
+  
 }
 
 .blog-related-item__title-wrapper {

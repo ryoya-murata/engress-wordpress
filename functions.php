@@ -67,44 +67,51 @@ function my_bcn_breadcrumb_title($title, $this_type, $this_id)
 };
 add_filter('bcn_breadcrumb_title', 'my_bcn_breadcrumb_title', 10, 3);
 
-function title_character_count_limit($count = 40){
+function title_character_count_limit($count = 40)
+{
   global $post;
-  if(mb_strlen($post->post_title, 'UTF-8')>$count){
-      $title = mb_substr($post->post_title, 0, $count, 'UTF-8');
-    echo $title.'···';
-  }else{
+  if (mb_strlen($post->post_title, 'UTF-8') > $count) {
+    $title = mb_substr($post->post_title, 0, $count, 'UTF-8');
+    echo $title . '···';
+  } else {
     echo $post->post_title;
   }
 }
 
 
 
-function new_excerpt_mblength($length) {
-     return 20; 
+function new_excerpt_mblength($length)
+{
+  if (is_home()) {
+    return 35;
+  } else {
+    return 20;
+  }
 }
 add_filter('excerpt_mblength', 'new_excerpt_mblength');
 
-function new_excerpt_more($more) {
-    return '···';
+function new_excerpt_more($more)
+{
+  return '···';
 }
 add_filter('excerpt_more', 'new_excerpt_more');
 
 /**
-* ウィジェットの登録
-*
-* @codex http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_sidebar
-*/
-function my_widget_init() {
+ * ウィジェットの登録
+ *
+ * @codex http://wpdocs.osdn.jp/%E9%96%A2%E6%95%B0%E3%83%AA%E3%83%95%E3%82%A1%E3%83%AC%E3%83%B3%E3%82%B9/register_sidebar
+ */
+function my_widget_init()
+{
   register_sidebar(
-  array(
-  'name' => 'サイドバー', //表示するエリア名
-  'id' => 'sidebar', //id
-  'before_widget' => '',
-  'after_widget' => '',
-  'before_title' => '<div class="blog-single-aside__title">',
-  'after_title' => '</div>',
-  )
+    array(
+      'name' => 'サイドバー', //表示するエリア名
+      'id' => 'sidebar', //id
+      'before_widget' => '',
+      'after_widget' => '',
+      'before_title' => '<div class="blog-single-aside__title">',
+      'after_title' => '</div>',
+    )
   );
-  }
-  add_action( 'widgets_init', 'my_widget_init' );
-  
+}
+add_action('widgets_init', 'my_widget_init');
