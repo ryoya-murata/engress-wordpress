@@ -14,8 +14,13 @@
         ?>
 
             <div class="blog-single-item blog-single-contents__item-wrapper">
-              <?php $category_obj = get_the_category(); ?>
-              <div class="blog-single-item__category"><?php echo $category_obj[0]->cat_name; ?></div><!-- /.blog-single-item__category -->
+              <?php 
+              $category_obj = get_the_category(); 
+              $category_link = get_category_link($category_obj[0]->cat_ID);
+              ?>
+              <div class="blog-single-item__category">
+                <a href="<?php echo $category_link; ?>" class="blog-single-item__category-link"><?php echo $category_obj[0]->cat_name; ?></a><!-- /.blog-single-item__category-link -->
+              </div><!-- /.blog-single-item__category -->
               <h2 class="blog-single-item__title"><?php the_title(); ?></h2><!-- /.blog-single-item__title -->
               <div class="blog-single-item__info-wrapper">
                 <div class="blog-single-item__sns-wrapper">
