@@ -5,7 +5,12 @@
    <meta charset="UTF-8">
    <meta http-equiv="X-UA-Compatible" content="IE=edge">
    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-   <title>Engress</title>
+   <meta name="description" content="
+   <?php if (has_excerpt()) {
+      echo get_the_excerpt();
+   } else {
+      bloginfo('description');
+   } ?>">
    <link rel="stylesheet" href="https://unpkg.com/scroll-hint@latest/css/scroll-hint.css">
 
    <?php wp_head(); ?>
@@ -18,7 +23,7 @@
             <div class="header__contents">
                <div class="header__logo-wrapper">
                   <a href="<?php echo esc_url(home_url('/')); ?>" class="header__logo-link">
-                  <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="header__logo">
+                     <img src="<?php echo get_template_directory_uri(); ?>/images/front/logo2.png" alt="Engress" class="header__logo">
                   </a><!-- /.header__logo-link -->
                </div><!-- /.header__logo-wrapper -->
                <?php
@@ -84,6 +89,6 @@
             </div><!-- /.header__infomation-wrapper -->
          </div><!-- /.header__contents-wrapper -->
       </div><!-- /.inner inner--wide header__inner -->
-                     
+
 
    </header><!-- /.header -->

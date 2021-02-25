@@ -59,7 +59,7 @@
          <div class="strength-item strength__items_item">
             <div class="strength-item__intro-wrapper strength-item__intro-wrapper--margin_right">
                <div class="strength-item__tag">特長 3</div><!-- /.strength-item__tag -->
-               <h3 class="strength-item__title">平均3ヶ月でTOEFL <br>iBT20点アップ</h3><!-- /.strength-item__title -->
+               <h3 class="strength-item__title">平均3ヶ月でTOEFL <br class="is-md">iBT20点アップ</h3><!-- /.strength-item__title -->
                <p class="strength-item__desc">Engressは高校生からサラリーマンまで様々な年齢層の方々が通われていますが、完全オーダーメイドのカリキュラムで柔軟に対応しているため、平均3ヶ月でTOEFLスコアを20点アップさせています。</p><!-- /.strength-item__desc -->
             </div><!-- /.strength-item__intro-wrapper -->
             <div class="strength-item__img-wrapper">
@@ -213,7 +213,7 @@
                </p><!-- /.qanda-item__question -->
             </div><!-- /.qanda-item__question-wrapper -->
             <div class="qanda-item__answer-wrapper display_none">
-               <p class="qanda-item__answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p><!-- /.qanda-item__answer -->
+               <p class="qanda-item__answer">Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。Engressは各個人に最適な学習プランをご提供しております。サラリーマンの方でも継続できます。</p><!-- /.qanda-item__answer -->
             </div><!-- /.qanda-item__answer-wrapper display_none -->
          </div><!-- /.qanda-item -->
          <div class="qanda-item">
@@ -251,6 +251,7 @@
                <?php $args = array(
                   'post_type' => 'post',
                   'posts_per_page' => 3,
+                  'ignore_sticky_posts' => 1,
                );
                $blog_query = new WP_Query($args);
                ?>

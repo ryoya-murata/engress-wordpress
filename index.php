@@ -3,7 +3,7 @@
 
 
 <div class="page-firstview">
-   <div class="page-firstview__img-wrapper" >
+   <div class="page-firstview__img-wrapper">
       <img src="<?php echo get_template_directory_uri(); ?>/images/page/blog2.png" alt="ブログ" class="page-firstview__img">
    </div><!-- /.page-firstview__img-wrapper -->
    <h2 class="page-firstview__title">ブログ</h2><!-- /.page-firstview__title -->
@@ -44,7 +44,7 @@
       </div><!-- /.blog-archive__items-wrapper -->
 
 
-     <?php get_template_part('./template-parts/pagenation'); ?>
+      <?php get_template_part('./template-parts/pagenation'); ?>
 </section><!-- /.page-section blog-archive -->
 
 

@@ -7,15 +7,15 @@
 <section class="section page-section blog-single-contents">
   <div class="inner inner--middle">
     <div class="blog-single-contents__inner">
-      <main class="blog-single-contents__item-wrapper">
+      <main class="blog-single-contents__items-wrapper">
         <?php
         if (have_posts()) :
           while (have_posts()) : the_post();
         ?>
 
             <div class="blog-single-item blog-single-contents__item-wrapper">
-              <?php 
-              $category_obj = get_the_category(); 
+              <?php
+              $category_obj = get_the_category();
               $category_link = get_category_link($category_obj[0]->cat_ID);
               ?>
               <div class="blog-single-item__category">
@@ -33,15 +33,28 @@
                 </div><!-- /.blog-single-item__sns-wrapper -->
                 <time class="blog-single-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.blog-single-item__time -->
               </div><!-- /.blog-single-item__info-wrapper -->
-                <?php
-                if (has_post_thumbnail()) :
-                ?>
-              <div class="blog-single-item__img-wrapper">
-                <?php  the_post_thumbnail('large'); ?>
-              </div><!-- /.blog-single-item__img-wrapper -->
+              <?php
+              if (has_post_thumbnail()) :
+              ?>
+                <div class="blog-single-item__img-wrapper">
+                  <?php the_post_thumbnail('large'); ?>
+                </div><!-- /.blog-single-item__img-wrapper -->
               <?php endif; ?>
               <div class="blog-single-item__contents-wrapper">
                 <?php the_content(); ?>
+                <?php
+                //改ページを有効にするための記述
+                wp_link_pages(
+                  array(
+                    'before' => '<nav class="blog-single-item__nav">',
+                    'after' => '</nav>',
+                    'link_before' => '',
+                    'link_after' => '',
+                    'next_or_number' => 'number',
+                    'separator' => '',
+                  )
+                );
+                ?>
               </div><!-- /.blog-single-item__contents-wrapper -->
             </div><!-- /.blog-single-item -->
           <?php endwhile; ?>

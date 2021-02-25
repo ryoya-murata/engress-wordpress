@@ -2,7 +2,7 @@
 
 <div class="page-firstview">
   <div class="page-firstview__img-wrapper">
-    <img src="<?php echo get_template_directory_uri(); ?>/images/page/plan2.png" alt="コース・料金" class="page-firstview__img">
+    <img src="<?php echo get_template_directory_uri(); ?>/images/page/news.png" alt="お知らせ" class="page-firstview__img">
   </div><!-- /.page-firstview__img-wrapper -->
   <h2 class="page-firstview__title">お知らせ</h2><!-- /.page-firstview__title -->
 </div><!-- /.page-firstview -->

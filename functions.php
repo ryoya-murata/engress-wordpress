@@ -1,5 +1,7 @@
 <?php
 
+add_theme_support('title-tag');
+
 function my_setup()
 {
   add_theme_support('post-thumbnails');
@@ -59,6 +61,8 @@ function my_bcn_breadcrumb_title($title, $this_type, $this_id)
     $title = '料金体系';
   } elseif (is_page('contact')) {
     $title = 'お問い合わせ';
+  } elseif (is_page('complete')) {
+    $title = '送信完了';
   } elseif (is_home()) {
     $title = 'ブログ';
   }

@@ -44,7 +44,7 @@
             <a href="#" class="button button--color_yellow button--shape_circle button--size_s button--footer-request">資料請求</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
          </div><!-- /.fixed-button-wrapper fixed-buttons-container__wrapper -->
          <div class="fixed-button-wrapper fixed-buttons-container__wrapper">
-            <a href="#" class="button button--color_primary button--shape_circle button--size_s button--footer-inquiry">お問い合わせ</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
+            <a href="<?php echo esc_url(home_url('contact')); ?>" class="button button--color_primary button--shape_circle button--size_s button--footer-inquiry">お問い合わせ</a><!-- /.button button--color_yellow button--shape_square button--size_s -->
          </div><!-- /.fixed-button-wrapper fixed-buttons-container__wrapper -->
       </div><!-- /.fixed-buttons-container__contents -->
    </div><!-- /.inner -->

@@ -68,7 +68,7 @@
         </div><!-- /.price-table-item__title-wrapper -->
         <div class="price-table-item__body">
           <?php if (get_field('price-prepare')) : ?>
-            <p class="price-table-item__price">
+            <p class="price-table-item__price price-table-item__price--caution">
               <?php the_field('price-prepare'); ?>円~</p><!-- /.price-table-item__price -->
             <p class="price-table-item__price-desc">*月額（税抜価格）</p><!-- /.price-table-item__price-desc -->
           <?php endif; ?>
