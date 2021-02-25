@@ -22,7 +22,7 @@
             <a href="<?php the_permalink(); ?>" class="news-archive-item news-archive-items__item">
               <div class="news-archive-item__contents">
                 <div class="news-archive-item__time-wrapper">
-                  <time class="news-archive-item__time" datetime="<?php the_time('Y-n-j'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.news-archive-item__time -->
+                  <time class="news-archive-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-j'); ?></time><!-- /.news-archive-item__time -->
                 </div><!-- /.news-archive-item__time-wrapper -->
                 <div class="news-archive-item__title-wrapper">
                   <h3 class="news-archive-item__title"><?php title_character_count_limit(45); ?></h3><!-- /.news-archive-item__title -->

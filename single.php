@@ -87,7 +87,7 @@
                       <div class="blog-pickup-item__category"><?php echo $category_obj[0]->cat_name; ?></div><!-- /.blog-pickup-item__category -->
                     </div><!-- /.blog-pickup-item__img-wrapper -->
                     <div class="blog-pickup-item__info-wrapper">
-                      <time class="blog-pickup-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.blog-pickup-item__time -->
+                      <time class="blog-pickup-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-j'); ?></time><!-- /.blog-pickup-item__time -->
                       <h3 class="blog-pickup-item__title"><?php title_character_count_limit(30); ?></h3><!-- /.blog-pickup-item__title -->
                     </div><!-- /.blog-pickup-item__info-wrapper -->
                   </div><!-- /.blog-pickup__item blog-pickup-item -->

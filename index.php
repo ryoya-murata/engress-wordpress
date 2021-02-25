@@ -33,7 +33,7 @@
                         <div class="blog-archive-item__category"><?php echo $category_obj[0]->cat_name; ?></div><!-- /.blog-archive-item__category -->
                      </div><!-- /.blog-archive-item__img-wrapper -->
                      <div class="blog-archive-item__info-wrapper">
-                        <time class="blog-archive-item__time" datatime="<?php the_time('c'); ?>"><?php the_time('Y-n-j') ?></time><!-- /.blog-archive-item__time -->
+                        <time class="blog-archive-item__time" datatime="<?php the_time('c'); ?>"><?php the_time('Y-m-j') ?></time><!-- /.blog-archive-item__time -->
                         <h3 class="blog-archive-item__title"><?php title_character_count_limit(30); ?></h3><!-- /.blog-archive-item__title -->
                         <p class="blog-archive-item__excerpt"><?php the_excerpt(); ?></p><!-- /.blog-archive-item__excerpt -->
                      </div><!-- /.blog-archive-item__info-wrapper -->

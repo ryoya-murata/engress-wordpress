@@ -276,7 +276,7 @@
                               </div><!-- /.blog-item__img-container -->
                               <div class="blog-item__info-wrapper">
                                  <h3 class="blog-item__title"><?php title_character_count_limit(26); ?></h3><!-- /.blog-item__title -->
-                                 <time class="blog-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.blog-item__time -->
+                                 <time class="blog-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-j'); ?></time><!-- /.blog-item__time -->
                               </div><!-- /.blog-item__info-wrapper -->
                            </div><!-- /.blog-item__contents -->
                         </a><!-- /.blog-item__link -->
@@ -301,7 +301,7 @@
                ?>
                      <div class="news-item news-items__item">
                         <a href="<?php the_permalink(); ?>" class="news-item__link">
-                           <time class="news-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.news-item__time -->
+                           <time class="news-item__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-j'); ?></time><!-- /.news-item__time -->
                            <h3 class="news-item__title"><?php title_character_count_limit(40); ?></h3><!-- /.news-item__title -->
                         </a><!-- /.news-item__link -->
                      </div><!-- /.news-item news-items__item -->

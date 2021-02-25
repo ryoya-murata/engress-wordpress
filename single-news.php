@@ -13,7 +13,7 @@ if (have_posts()) :
          <div class="inner inner--middle">
             <h2 class="news-single__title"><?php the_title(); ?></h2><!-- /.news-single__title -->
             <div class="news-single__time-wrapper">
-               <time class="news-single__time" datetime="<?php the_time('Y-n-j'); ?>"><?php the_time('Y-n-j'); ?></time><!-- /.news-single__time -->
+               <time class="news-single__time" datetime="<?php the_time('c'); ?>"><?php the_time('Y-m-j'); ?></time><!-- /.news-single__time -->
             </div><!-- /.news-single__time-wrapper -->
             <div class="news-single__contents-wrapper">
             <?php the_content(); ?>
