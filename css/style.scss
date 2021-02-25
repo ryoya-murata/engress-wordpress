@@ -2308,6 +2308,8 @@ $layer: (
   text-decoration-thickness: 1px;
   -webkit-text-decoration-color: $primary-color;
   text-decoration-color: $primary-color;
+  word-break: break-all;
+
 
   @include mq("md") {
     font-size: 1em;
@@ -2497,6 +2499,10 @@ $layer: (
     height: auto;
     vertical-align: middle;
     display: inline-block;
+  }
+
+  figure{
+    margin-top: 2em;
   }
 
   h1 {

@@ -64,7 +64,8 @@
           'post_type' => 'post',
           'tag' => 'pickup',
           'posts_per_page' => 3,
-          'orderby' => 'DESC',
+          'orderby' => 'desc',
+          'post__not_in' => array( $post->ID ),
         );
         $pickup_query = new WP_Query($args); ?>
         <div class="blog-pickup">
