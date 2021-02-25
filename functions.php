@@ -25,11 +25,10 @@ function my_script_init()
 {
   wp_enqueue_style('fontawesome', 'https://use.fontawesome.com/releases/v5.6.1/css/all.css', array(), '5.6.1', 'all');
   wp_enqueue_style('destyle', get_template_directory_uri() . '/css/destyle.css', array(), '2.0.2', 'all');
-  wp_enqueue_style('scrollhintcss', 'https://unpkg.com/scroll-hint@latest/css/scroll-hint.css', array(), '4.17.19', 'all');
+  wp_enqueue_style('scrollhint_css', 'https://unpkg.com/scroll-hint@latest/css/scroll-hint.css', array(), '4.17.19', 'all');
   wp_enqueue_style('my', get_template_directory_uri() . '/css/style.css', array(), '1.0.0', 'all');
-  wp_enqueue_script('jquery');
-  wp_enqueue_script('scrollhint', 'https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js', array('jquery'), '4.17.19', false);
-  wp_enqueue_script('my', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
+  wp_enqueue_script('scrollhint_js', 'https://unpkg.com/scroll-hint@latest/js/scroll-hint.min.js', array('jquery'), '4.17.19', true);
+  wp_enqueue_script('my_js', get_template_directory_uri() . '/js/script.js', array('jquery'), '1.0.0', true);
 }
 add_action('wp_enqueue_scripts', 'my_script_init');
 
