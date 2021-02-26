@@ -809,6 +809,10 @@ $layer: (
 .strength-item__img-wrapper {
   flex: 0 0 38.8889%;
 
+  img{
+    object-fit: cover;
+  }
+
   @include mq("lg") {
     flex: 0 0 49.77%;
   }
@@ -1691,6 +1695,10 @@ $layer: (
 
 .page-firstview__img-wrapper {
   height: 100%;
+
+  img{
+    object-fit: cover;
+  }
 }
 
 .page-firstview__title {
@@ -1984,7 +1992,9 @@ $layer: (
   height: 179px;
 
   img {
+    width: 100%;
     height: 179px;
+    object-fit: cover;
   }
 
   @include mq("lg") {
@@ -2251,6 +2261,10 @@ $layer: (
   height: 128px;
   margin-right: 5.4232%;
 
+  img{
+    object-fit: cover;
+  }
+
   @include mq("lg") {
     height: auto;
     &::before {
@@ -2364,6 +2378,8 @@ $layer: (
   img {
     display: block;
     height: 100%;
+    width: 100%;
+    object-fit: cover;
   }
 
   @include mq("lg") {
